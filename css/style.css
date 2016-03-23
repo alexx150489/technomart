@@ -12,6 +12,21 @@ a {
     color: white;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
 .clearfix::after {
     content:"";
     display: table;
@@ -20,6 +35,7 @@ a {
 
 .main-header {
      background-color: #f1f5f7;
+    margin-bottom: 60px;
 }
 
 .main-header > .wrapper {
@@ -54,8 +70,8 @@ a {
 }
 
 .header-top .logo::before {
-    content: '';
-    width: 237px;
+    content: "";
+    width: 235px;
     height: 5px;
     position: absolute;
     top: 44px;
@@ -176,6 +192,8 @@ a {
 
 .main-navigation {
     background-color: #f1f5f7;
+    padding-bottom: 1px;
+    
 }
 
 .main-navigation ul {
@@ -183,6 +201,7 @@ a {
     margin: 0;
     padding: 0;
     font-size: 0;
+    margin-bottom: 59px;
     border-bottom: 5px solid #293449;
     background-color: #32425c;
 }
@@ -205,4 +224,349 @@ a {
 
 .main-navigation a:active {
     color: #777d88;
+}
+
+.features {
+    width: 940px;
+    font-size: 0;
+    margin-bottom: 53px;
+}
+
+.features .features-item {
+    width: 300px ;
+    height: 123px;
+}
+
+.features .materials {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    position: relative;
+    background: #f6b22d url(../img/material.png)  no-repeat 200px 30px;
+}
+
+.features .materials::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    background: url("../img/new.png") no-repeat;
+    top: 0px;
+    left: 240px;
+}
+
+
+.features .tools {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    background: #4aafde url(../img/instrum.png)  no-repeat 200px 30px;
+}
+
+
+.features .slider {
+    width: 620px;
+    height: 266px;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    background-color: red;
+}
+
+.features .technics {
+    margin-bottom: 20px;
+    float: right;   
+    display: inline-block;
+    vertical-align: top;
+    background: #cc79d1 url(../img/technics.png)  no-repeat 200px 30px;
+}
+
+.features .discount {
+    margin-bottom: 20px;
+    float: right;  
+    display: inline-block;
+    vertical-align: top;
+    background: #85d179 url(../img/skidki.png)  no-repeat 200px 30px;
+}
+
+.features .delivery {
+    float: right;  
+    display: inline-block;
+    vertical-align: top;
+    background: #f6b22d url(../img/dostavka.png)  no-repeat 200px 30px;;
+}
+
+.features .title {
+    font-size: 24px ;
+    line-height: 30px ;
+    font-weight: 700;
+    color: white;
+    margin-top: 26px;
+    margin-left: 23px;
+    margin-bottom: 7px;
+}
+
+.features  .btn {
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    line-height: 38px;
+    width: 135px;
+    text-align: center;
+    height: 38px;
+    margin-left: 25px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.features  .btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.features  .btn:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.popular-items-section {
+    margin-bottom: 21px;
+}
+
+.popular-items-section .title {
+    padding: 30px 0px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    background-color: #f7f3ec;
+    color: #32425c;
+}
+
+.title .btn-show-all {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    padding: 10px 58px;
+    margin-right: 26px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #ee3643;
+    border-radius: 3px;
+}
+
+.popular-items-section .popular-items {
+    width: 100%;
+    font-size: 0;
+}
+
+.popular-items .item {
+    width: 218px;
+    min-height: 316px;
+    margin-right: 20px;
+    border:1px solid #e5e5e5;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "PT Sans";
+    font-weight: 700;
+    
+    /* border-box */
+}
+
+.popular-items .item:last-child {
+    margin-right: 0;
+    position: relative;
+}
+
+.popular-items .item:last-child::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 59px;
+    background: url("../img/new.png") no-repeat;
+    top: 0px;
+    left: 158px;
+}
+
+.item:last-child .item-title  {
+    margin-bottom: 54px;
+}
+
+.item .image {
+    text-align: center;
+    margin-top: 29px;
+    height: 135px;
+}
+
+.item .item-title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    width: 191px;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-left: 17px;
+}
+
+.item del {
+    font-size: 17px;
+    line-height: 18px;
+    color: gray;
+    margin-left: 77px;
+    
+}
+
+.item .price-block {
+    width: 140px;
+    height: 38px;
+    background: url("../img/triangle-background.png") no-repeat;
+    font-size: 17px;
+    line-height: 38px;
+    color: white;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 41px;
+}
+
+.popular-vendors-section .title {
+    padding: 30px 0px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    background-color: #f7f3ec;
+    color: #32425c;
+}
+
+.popular-vendors {
+    font-size: 0;
+    width: 940px;
+}
+
+.popular-vendors .vendor-logo {
+    width: 218px;
+    height: 145px;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border:1px solid #e5e5e5;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.popular-vendors .vendor-logo:nth-child(4n) {
+    margin-right: 0;
+}
+
+.popular-vendors .bosch {
+    background: url(../img/bosch.png) center no-repeat;    
+}
+
+.popular-vendors .bosch:hover {
+    box-shadow: 0px 4px 22px 7px lightgray; 
+}
+
+.popular-vendors .bosch:active {
+    background: url(../img/bosch-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .makita {
+    background: url(../img/makita.png) center no-repeat;    
+}
+
+.popular-vendors .makita:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .makita:active {
+    background: url(../img/makita-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .dewalt {
+    background: url(../img/DeWALT.png) center no-repeat;    
+}
+
+.popular-vendors .dewalt:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .dewalt:active {
+    background: url(../img/dewalt-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .interskol {
+    background: url(../img/interskol.png) center no-repeat;    
+}
+
+.popular-vendors .interskol:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .interskol:active {
+    background: url(../img/interskol-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .hitachi {
+    background: url(../img/hitachi.png) center no-repeat;    
+}
+
+.popular-vendors .hitachi:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .hitachi:active {
+    background: url(../img/hitachi-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .lg {
+    background: url(../img/lg.png) center no-repeat;    
+}
+
+.popular-vendors .lg:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .lg:active {
+    background: url(../img/lg-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .aeg {
+    background: url(../img/aeg.png) center no-repeat;    
+}
+
+.popular-vendors .aeg:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .aeg:active {
+    background: url(../img/aeg-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
+}
+
+.popular-vendors .metabo {
+    background: url(../img/metabo.png) center no-repeat;    
+}
+
+.popular-vendors .metabo:hover {
+    box-shadow: 0px 4px 21px 7px lightgray; 
+}
+
+.popular-vendors .metabo:active {
+    background: url(../img/metabo-tr.png) center no-repeat;
+    box-shadow: 0px 4px 22px 3px lightgray;
 }
